@@ -21,46 +21,18 @@
     <link href="css/styles.css" rel="stylesheet" />
 
     <script>
-        window.onload = () => {
-            let nameInput = document.getElementById("name");
-            let emailInput = document.getElementById("email");
-            let phoneInput = document.getElementById("phone");
-            let messageInput = document.getElementById("message");
-            let subButton = document.getElementById("submitButton");
-
-            function checkInputs() {
-                let nameValue = nameInput.value.trim();
-                let emailValue = emailInput.value.trim();
-                let phoneValue = phoneInput.value.trim();
-                let messageValue = messageInput.value.trim();
-
-                if (
-                    nameValue !== "" &&
-                    emailValue !== "" &&
-                    phoneValue !== "" &&
-                    messageValue !== ""
-                ) {
-                    subButton.disabled = false;
-                } else {
-                    subButton.disabled = true;
-                }
-            }
-
-            nameInput.addEventListener("input", checkInputs);
-            emailInput.addEventListener("input", checkInputs);
-            phoneInput.addEventListener("input", checkInputs);
-            messageInput.addEventListener("input", checkInputs);
-
-            subButton.addEventListener("click", function () {
+        window.onload=()=>{
+            let subbutton = document.getElementById("submitButton");
+            subbutton.addEventListener("click", function () {
                 swal({
-                    title: "발송 성공",
-                    text: "이메일 발송을 성공적으로 완료했습니다." + "<br>" + "답장을 기다리세요",
-                    icon: "success",
-                    button: "닫기",
-                });
+                    title: '발송 성공',
+                    text:'이메일 발송을 성공적으로 완료했습니다.'+'<br>'+'답장을 기다리세요',
+                    icon:'success',
+                    button:'닫기',
+                })
             });
-        };
-    </script>
+        }
+    </script> 
 </head>
 
 <body id="page-top">
@@ -266,7 +238,7 @@
                             <div class="text-center text-danger mb-3">Error sending message!</div>
                         </div>
                         <!-- Submit Button-->
-                        <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                        <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Send</button>
                     </form>
                 </div>
             </div>
