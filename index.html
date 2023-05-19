@@ -21,18 +21,18 @@
     <link href="css/styles.css" rel="stylesheet" />
 
     <script>
-        window.onload() {
+        window.onload=()=>{
             let subbutton = document.getElementById("submitButton");
             subbutton.addEventListener("click", function () {
                 swal({
-                    tittle: '발송 성공',
+                    title: '발송 성공',
                     text:'이메일 발송을 성공적으로 완료했습니다.'+'<br>'+'답장을 기다리세요',
                     icon:'success',
                     button:'닫기',
                 })
             });
         }
-    </script>
+    </script> 
 </head>
 
 <body id="page-top">
