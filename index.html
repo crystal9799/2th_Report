@@ -26,7 +26,7 @@
             subbutton.addEventListener("click", function () {
                 swal({
                     title: '발송 성공',
-                    text:'이메일 발송을 성공적으로 완료했습니다.'+'<br>'+'답장을 기다리세요',
+                    text:'이메일 발송을 성공적으로 완료했습니다.'+"<br>"+'답장을 기다리세요',
                     icon:'success',
                     button:'닫기',
                 })
@@ -202,7 +202,7 @@
                                 data-sb-validations="required,email" />
                             <label for="email">Email address</label>
                             <div class="invalid-feedback" data-sb-feedback="email:required">이메일을 입력 해 주세요.</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">이메일이 옳바르지 않습니다.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">이메일이 올바르지 않습니다.</div>
                         </div>
                         <!-- Phone number input-->
                         <div class="form-floating mb-3">
@@ -238,7 +238,7 @@
                             <div class="text-center text-danger mb-3">Error sending message!</div>
                         </div>
                         <!-- Submit Button-->
-                        <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Send</button>
+                        <button class="btn btn-primary btn-xl disable" id="submitButton" type="submit">Send</button>
                     </form>
                 </div>
             </div>
